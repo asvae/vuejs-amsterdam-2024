@@ -1,12 +1,14 @@
 <template>
-  <div data-testid="rating">
+  <div role="radiogroup">
     <div
         v-for="index in 5"
         :key="index"
         class="cursor-pointer py-2"
         :class="{'text-yellow-400': index <= model, 'text-gray-400': index > model}"
         @click="model = index"
-        :data-testid="'rating-item-' + index"
+        role="radio"
+        :aria-checked="index <= model.value ? 'true' : 'false'"
+        :aria-label="'Rating ' + index"
     >
       ★
     </div>
