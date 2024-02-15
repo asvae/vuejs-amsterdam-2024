@@ -4,7 +4,7 @@
 
 <script setup>
 // App.vue
-import Rating from "../components/Rating.vue";
+import Rating from "./Rating.vue";
 import {ref} from "vue";
 
 const value = ref(2)

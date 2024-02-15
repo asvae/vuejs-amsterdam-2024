@@ -1,5 +1,5 @@
 <template>
-  <div role="radiogroup">
+  <div class="flex" role="radiogroup">
     <div
         v-for="index in 5"
         :key="index"

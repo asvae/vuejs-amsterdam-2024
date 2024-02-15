@@ -21,7 +21,7 @@ describe("Rating", () => {
   it("matches the snapshot", () => {
     const wrapper = mount(Rating, {
       props: {
-        modelValue: 3,
+        modelValue: 2,
       },
     });
 
